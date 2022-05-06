@@ -1,0 +1,25 @@
+
+Recv: echo:; Hotend PID:
+Recv: echo:  M301 P9.95 I1.04 D23.88
+Recv: echo:; Bed PID:
+Recv: echo:  M304 P22.14 I1.31 D249.15
+
+; Fan to 50% / 255 for 100%
+M106 S128
+
+; Start PID autotune for Hotend with temperature 220°C  
+: U1 means save to RAM
+M303 E0 S220 U1
+
+;result
+Kp: 20.92 Ki: 2.54 Kd: 43.10
+
+; Start PID autotune for Bed with temperature 80°C
+M303 E-1 S80 U1
+
+; result
+Kp: 44.09 Ki: 4.83 Kd: 268.06
+
+; Save to EPROM
+M500
+
