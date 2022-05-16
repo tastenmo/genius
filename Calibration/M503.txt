@@ -45,9 +45,9 @@ Recv: echo:  G29 W I2 J4 Z0.10489
 Recv: echo:  G29 W I3 J4 Z0.06757
 Recv: echo:  G29 W I4 J4 Z-0.00955
 Recv: echo:; Hotend PID:
-Recv: echo:  M301 P9.95 I1.04 D23.88
+Recv: echo:  M301 P20.04 I2.34 D42.89
 Recv: echo:; Bed PID:
-Recv: echo:  M304 P22.14 I1.31 D249.15
+Recv: echo:  M304 P44.09 I4.83 D268.06
 Recv: echo:; Z-Probe Offset:
 Recv: echo:  M851 X27.25 Y-12.80 Z-0.43 ; (mm)
 Recv: echo:; Linear Advance:
